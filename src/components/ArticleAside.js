@@ -48,8 +48,8 @@ const ArticleAside = (props) => {
           <hr></hr>
         </>
       })}
-      {!!tags && <div className="d-flex flex-wrap">{tags.split(', ').map((elem) => {
-        return <span className="fs-5 badge bg-secondary p-2 m-1">{elem}</span>
+      {!!tags && <div className="d-flex flex-wrap blockTags">{tags.split(', ').map((elem) => {
+        return <span className="fs-5 badge p-2 m-1 tags">{elem}</span>
       })}</div>}
     </div>
 
